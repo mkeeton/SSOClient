@@ -30,3 +30,33 @@ C:\Development\Applications\C\Demo Apps\SSOTest\SSOTest\bin\Microsoft.AspNet.Ide
 C:\Development\Applications\C\Demo Apps\SSOTest\SSOTest\bin\Authentication.BasicMVC.Domain.pdb
 C:\Development\Applications\C\Demo Apps\SSOTest\SSOTest\bin\System.Net.Http.Formatting.xml
 C:\Development\Applications\C\Demo Apps\SSOTest\SSOTest\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Development\Applications\C\Git\SSOClient\SSOTest\obj\Debug\SSOTest.csprojResolveAssemblyReference.cache
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\SSOTest.dll.config
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\SSOTest.dll
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\SSOTest.pdb
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\Antlr3.Runtime.dll
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\Authentication.BasicMVC.Client.dll
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\Microsoft.Web.Infrastructure.dll
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\Newtonsoft.Json.dll
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\System.Net.Http.Formatting.dll
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\System.Web.Helpers.dll
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\System.Web.Mvc.dll
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\System.Web.Optimization.dll
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\System.Web.Razor.dll
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\System.Web.WebPages.Deployment.dll
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\System.Web.WebPages.dll
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\System.Web.WebPages.Razor.dll
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\WebGrease.dll
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\Authentication.BasicMVC.Client.pdb
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\Antlr3.Runtime.pdb
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\Newtonsoft.Json.xml
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\System.Net.Http.Formatting.xml
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\System.Web.Helpers.xml
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\System.Web.Mvc.xml
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\System.Web.Razor.xml
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\System.Web.WebPages.xml
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\System.Web.WebPages.Deployment.xml
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\System.Web.WebPages.Razor.xml
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\System.Web.Optimization.xml
+C:\Development\Applications\C\Git\SSOClient\SSOTest\obj\Debug\SSOTest.dll
+C:\Development\Applications\C\Git\SSOClient\SSOTest\obj\Debug\SSOTest.pdb

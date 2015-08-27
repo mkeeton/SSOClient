@@ -8,6 +8,9 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 
+using Authentication.BasicMVC.Client.Models;
+using Authentication.BasicMVC.Client.Repositories;
+
 namespace SSOTest.Authorization
 {
   public class SSOAuthorization : AuthorizeAttribute
@@ -27,23 +30,24 @@ namespace SSOTest.Authorization
         client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
         // New code:
-        HttpResponseMessage response = client.GetAsync("API/Authentication/" + Repositories.CookieRepository.GetCookieValue("SessionID", Guid.NewGuid().ToString())).Result;
+        HttpResponseMessage response = client.GetAsync("API/Authentication/" + CookieRepository.GetCookieValue("SessionID", Guid.NewGuid().ToString())).Result;
         if (response.IsSuccessStatusCode)
         {
-          Authentication.BasicMVC.Domain.Models.AuthenticationResponse _Response = response.Content.ReadAsAsync<Authentication.BasicMVC.Domain.Models.AuthenticationResponse>().Result;
-          if (_Response.ResponseCode == Authentication.BasicMVC.Domain.Models.AuthenticationResponse.AuthenticationResponseCode.Unknown)
+          AuthenticationResponse _Response = response.Content.ReadAsAsync<AuthenticationResponse>().Result;
+          if (_Response.ResponseCode == AuthenticationResponse.AuthenticationResponseCode.Unknown)
           {
-            context.Result = new RedirectResult(_Response.RedirectURL + "?sessionID=" + Repositories.CookieRepository.GetCookieValue("SessionID", Guid.NewGuid().ToString()) + "&returnURL=" + HttpUtility.UrlEncode(HttpContext.Current.Request.Url.Scheme + "://" + HttpContext.Current.Request.Url.Authority + HttpContext.Current.Request.Url.PathAndQuery));
+            context.Result = new RedirectResult(_Response.RedirectURL + "?sessionID=" + CookieRepository.GetCookieValue("SessionID", Guid.NewGuid().ToString()) + "&returnURL=" + HttpUtility.UrlEncode(HttpContext.Current.Request.Url.Scheme + "://" + HttpContext.Current.Request.Url.Authority + HttpContext.Current.Request.Url.PathAndQuery));
             return;
           }
-          else if (_Response.ResponseCode == Authentication.BasicMVC.Domain.Models.AuthenticationResponse.AuthenticationResponseCode.NotLoggedIn)
+          else if (_Response.ResponseCode == AuthenticationResponse.AuthenticationResponseCode.NotLoggedIn)
           {
-            context.Result = new RedirectResult(_Response.RedirectURL + "?sessionID=" + Repositories.CookieRepository.GetCookieValue("SessionID", Guid.NewGuid().ToString()) + "&returnURL=" + HttpUtility.UrlEncode(HttpContext.Current.Request.Url.Scheme + "://" + HttpContext.Current.Request.Url.Authority + HttpContext.Current.Request.Url.PathAndQuery));
+            context.Result = new RedirectResult(_Response.RedirectURL + "?sessionID=" + CookieRepository.GetCookieValue("SessionID", Guid.NewGuid().ToString()) + "&returnURL=" + HttpUtility.UrlEncode(HttpContext.Current.Request.Url.Scheme + "://" + HttpContext.Current.Request.Url.Authority + HttpContext.Current.Request.Url.PathAndQuery));
             return;
           }
-          else if (_Response.ResponseCode == Authentication.BasicMVC.Domain.Models.AuthenticationResponse.AuthenticationResponseCode.LoggedIn)
+          else if (_Response.ResponseCode == AuthenticationResponse.AuthenticationResponseCode.Error)
           {
-            //context.Result = new System.Web.Mvc.HttpStatusCodeResult((int)System.Net.HttpStatusCode.Accepted);
+            context.Result = new RedirectResult("~/Error/Authentication");
+            return;
           }
         }
       }

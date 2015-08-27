@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSOTest", "SSOTest\SSOTest.csproj", "{0FF6A340-1F1B-4116-9333-E83628F22B46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication.BasicMVC.Domain", "..\BasicMVC\Authentication.BasicMVC.Domain\Authentication.BasicMVC.Domain.csproj", "{2442A503-9F17-4268-9BB0-503117460E47}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication.BasicMVC.Client", "..\BasicMVC\Authentication.BasicMVC.Client\Authentication.BasicMVC.Client.csproj", "{F6281477-3D98-4815-A255-1CB97878E998}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{0FF6A340-1F1B-4116-9333-E83628F22B46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FF6A340-1F1B-4116-9333-E83628F22B46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FF6A340-1F1B-4116-9333-E83628F22B46}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2442A503-9F17-4268-9BB0-503117460E47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2442A503-9F17-4268-9BB0-503117460E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2442A503-9F17-4268-9BB0-503117460E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2442A503-9F17-4268-9BB0-503117460E47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6281477-3D98-4815-A255-1CB97878E998}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6281477-3D98-4815-A255-1CB97878E998}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6281477-3D98-4815-A255-1CB97878E998}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6281477-3D98-4815-A255-1CB97878E998}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
