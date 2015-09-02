@@ -60,3 +60,5 @@ C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\System.Web.WebPages.Razo
 C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\System.Web.Optimization.xml
 C:\Development\Applications\C\Git\SSOClient\SSOTest\obj\Debug\SSOTest.dll
 C:\Development\Applications\C\Git\SSOClient\SSOTest\obj\Debug\SSOTest.pdb
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\Authentication.BasicMVC.Client.Domain.dll
+C:\Development\Applications\C\Git\SSOClient\SSOTest\bin\Authentication.BasicMVC.Client.Domain.pdb
